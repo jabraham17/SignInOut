@@ -206,7 +206,12 @@ public class GUI extends JFrame
 		
 		for(Person p : persons)
 		{
-			Object[] newRowData = {p.lastName, p.firstName, p.studentID, p.timeSpent};
+			
+			//formatted time
+			double hrs = p.timeSpent / 3600000;
+			String fmtTime = hrs + "hrs";
+			
+			Object[] newRowData = {p.lastName, p.firstName, p.studentID, fmtTime};
 			
 		    model.addRow(newRowData);
 		}
