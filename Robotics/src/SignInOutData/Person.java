@@ -14,6 +14,13 @@ public class Person implements Comparable<Person>
 			return firstName.compareToIgnoreCase(person.firstName);
 		}
 		return order;
+		
+		/*if(timeSpent < person.timeSpent)
+			return -1;
+		if(timeSpent > person.timeSpent)
+			return 1;
+		else
+			return 0;*/
 	}
 	public boolean equals(Person person)
 	{
